@@ -9,6 +9,9 @@
     /* width: 100%; */
   }
 /* shared styles */
+.light{
+    font-weight: 300;
+}
 .font-awesome{
     display: none;
 }
@@ -20,7 +23,8 @@
     background: black;
 }
 .bg-white{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
+    background: black;
 }
 .text-white{
     color: #FFFFFF;
@@ -55,7 +59,6 @@
     color: rgb(255, 255, 255);
 }
 .container-description{ 
-    width: 671px;
     font-size: 1rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
@@ -237,6 +240,59 @@ height: 386px;
 .colspan{
   width: 600px;
 }
+/* team styles */
+.team-container{
+    flex-direction: column;
+    align-items: center;
+}
+.team{
+    width: 1000px;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    justify-items: center;
+}
+.nameplate-position {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+.nameplate{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.size{
+    border-radius: 20px;
+   width: 300px;
+}
+
+/* My section */
+.exercise-container{
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 1440px;
+    margin: 0px auto;
+    
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.box-size{
+    width: 380px;
+    height: 280px;
+}
+.exercise-des{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    width: 350px;
+}
+
 /* responsive small device */
 @media screen and (max-width: 576px){
     .brand, .banner, .container,.cards, .card-des{
