@@ -46,7 +46,7 @@
     width: 224px;
     height: 54px;
     color: rgb(255, 255, 255);
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-right: 10px;
 }
@@ -149,6 +149,9 @@ font-weight: 900;
 }
 
 /* Main section styles */
+.container {
+    margin-top: 0px auto;
+}
 .cards{
     display: flex;
     gap: 40px;
@@ -170,7 +173,6 @@ color: #FFFFFF;
 .icons{
     border-radius: 50%;
 }
-
 /* running exercise styles */
 .container-run {
     justify-content: space-evenly;
@@ -190,7 +192,6 @@ color: #FFFFFF;
     height: 312px;
     border-radius: 18px;
   }
-
   /* challange part */
 .BMI{
     margin-bottom: 80px;
@@ -275,7 +276,6 @@ height: 386px;
     background: rgba(255, 255, 255, 0.1);
     max-width: 1440px;
     margin: 0px auto;
-    
 }
 .box{
     display: grid;
@@ -293,11 +293,90 @@ height: 386px;
     width: 350px;
 }
 
+/* Footer section styles */
+.footer{
+    max-width: 100%;
+    margin: 0px auto;
+    background: black;
+}
+.fitness{
+    text-align: center;
+   width: 440px;
+   height: 170px;
+}
+.footer-header{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #E6533C;
+}
+.footer-title{
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+}
+.footer-link{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer-container{
+    width: 1000 px;
+    height: 250px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.copywrite{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
 /* responsive small device */
 @media screen and (max-width: 576px){
-    .brand, .banner, .container,.cards, .card-des{
+    .brand, .banner, .container,.cards, .card-des, .content,
+     .container-title, .container-description,.trainer,.box, .fitness, .get-started{
+        display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
+    }
+    .BMI, .media, .exercise-container {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        /* margin: 0 auto; */
+    }
+    .team{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        justify-items: center;
+    }
+   
+    .banner-description{
+        width: 276px;
+        margin: 0px auto;
+    }
+    .banner-content{
+        width: 352px;
+        height: 335px;
+        margin: 0px auto;
+
+    }
+    .badge{
+      margin-top: -100px;
+    }
+    .container-run{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 400px;
+        height: auto;
+
+    }
+    .bmi-table, .bmi-chart, .bmi-calculator, .bmi-chart-title{
+        width: 400px;
     }
     .font-awesome{
      display: flex;
